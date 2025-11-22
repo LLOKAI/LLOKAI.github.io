@@ -3,7 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>William Lokaisingh - Portfolio Website</title>
+    <title>William (Liam) Lokaisingh – Portfolio</title>
+    <meta name="description" content="William (Liam) Lokaisingh – Full-Stack Developer and SDNE student at Sheridan. Spring Boot, React, SQL, AWS, Docker. Projects: FindIT, Portfolio, Angular.">
+    <meta name="theme-color" content="#7c3aed">
+    <meta property="og:title" content="William (Liam) Lokaisingh – Portfolio">
+    <meta property="og:description" content="Full-Stack Developer | Spring Boot • React • SQL">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://github.com/LLOKAI">
     <link rel="stylesheet" href="css/styles.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -12,7 +18,7 @@
 </head>
 <body>
     <header class="header">
-        <a href="#home" class="logo"> William <span>Lokaisingh</span></a>
+        <a href="#home" class="logo" aria-label="Go to home"> William <span>Lokaisingh</span></a>
 
         <i class="bx bx-menu" id="menu-icon"></i>
 
@@ -20,52 +26,69 @@
             <a href="#about">About</a>
             <a href="#projects">Projects</a>
             <a href="#experience">Experience</a>
+            <a href="#skills">Skills</a>
             <a href="#contact">Contact</a>
         </nav>
     </header>    
 
     <section class="home" id="home">
         <div class="home-content">
-            <h3>Hello, I'm </h3>
-            <h1><span>William Lokaisingh</span></h1>
-            <h3 class="highlight">Software Development & Network Engineering Student at Sheridan College</h3> 
+            <h3>Hello, I'm</h3>
+            <h1><span>William (Liam) Lokaisingh</span></h1>
+            <h3 class="highlight">Full-Stack Developer • SDNE @ Sheridan (2023–2026)</h3>
+            <p class="subtle">Oakville, ON • Spring Boot • React • SQL • AWS • Docker</p>
 
-            <div class="btn-group">
-                <a href="assets/WilliamLokaisingh_Resume.pdf" target="_blank" class="btn">Download Resume</a>
+            <div class="btn-group" role="group" aria-label="Primary actions">
+                <a href="assets/WilliamLokaisingh_Resume.pdf" target="_blank" class="btn" aria-label="Open resume in new tab">Download Resume</a>
                 <a href="#contact" class="btn">Contact</a>
             </div>
-            
-            <div class="social-icons">
-                <a href="https://github.com/LLOKAI" target="_blank">
+
+            <div class="quick-contacts">
+                <a href="tel:16475284198" class="chip" aria-label="Call 647 528 4198"><i class='bx bx-phone'></i> 647-528-4198</a>
+                <a href="mailto:lokaisiw@sheridancollege.ca" class="chip" aria-label="Email Liam"><i class='bx bx-envelope'></i> Email</a>
+            </div>
+
+            <div class="social-icons" aria-label="Social links">
+                <a href="https://github.com/LLOKAI" target="_blank" aria-label="GitHub">
                     <i class="bx bxl-github"></i>
                 </a>
-                <a href="https://www.linkedin.com/in/william-lokaisingh/" target="_blank">
+                <a href="https://www.linkedin.com/in/william-lokaisingh/" target="_blank" aria-label="LinkedIn">
                     <i class="bx bxl-linkedin"></i>
                 </a>
             </div>
         </div>
 
         <div class="home-img">
-            <img src="images/image.jpg" alt="">
+            <img src="images/image.jpg" alt="Portrait of William (Liam) Lokaisingh">
         </div>
     </section>
 
     <section class="about" id="about">
 
         <div class="about-img">
-            <img src="images/image.jpg" alt="">
+            <img src="images/image.jpg" alt="William (Liam) Lokaisingh profile">
         </div>
 
         <div class="about-content">
             <h2>About <span>Me</span></h2>
-            <p>Lorem ipsum dolor, sit amet 
-            consectetur adipisicing elit. 
-            Ipsum pariatur excepturi aperiam 
-            eveniet aliquam accusantium, tempore, 
-            dolorum sint similique, aliquid repellat 
-            quisquam autem temporibus id molestias 
-            soluta voluptatum accusamus facilis.</p>
-            <a href="#" class="btn">Read More</a>
+            <p>
+                I’m a Full-Stack Developer and Software Development & Network Engineering student at Sheridan
+                (Jan 2023 – Apr 2026). I build reliable, testable systems across the stack using Spring Boot,
+                React, and SQL. I’ve improved code quality and delivery speed on real-world teams, raising
+                coverage, resolving SonarQube issues, and shipping features in agile sprints.
+            </p>
+            <p class="about-highlights">
+                Recently: Full‑Stack Developer @ Cloud2 Software Inc (Jul 2024 – Present) and Software Engineering
+                Research Assistant @ HSRA Inc. (May 2025 – Jul 2025).
+            </p>
+            <div class="tags">
+                <span class="tag">Spring Boot</span>
+                <span class="tag">React</span>
+                <span class="tag">SQL</span>
+                <span class="tag">AWS</span>
+                <span class="tag">Docker</span>
+                <span class="tag">CI/CD</span>
+            </div>
         </div>
     </section>
 
@@ -74,42 +97,71 @@
 
         <div class="projects-container">
 
-            <div class="projects-box">
+            <div class="projects-box reveal">
+                <div class="projects-info">
+                    <i class="bx bx-map"></i>
+                    <h4>FindIT – Indoor Navigation</h4>
+                    <p>Full‑stack platform with RESTful APIs, secure auth, and complex SQL for structured data serving a responsive React UI. Includes boundary, usability, and cross‑browser testing.</p>
+                    <div class="tags">
+                        <span class="tag">Spring Boot</span>
+                        <span class="tag">React</span>
+                        <span class="tag">SQL</span>
+                        <span class="tag">Auth</span>
+                        <span class="tag">Testing</span>
+                    </div>
+                </div>
+                <div class="project-links">
+                    <a href="https://github.com/LLOKAI" target="_blank" class="chip"><i class='bx bxl-github'></i> View Code</a>
+                    <a href="#contact" class="chip"><i class='bx bx-mail-send'></i> Request Demo</a>
+                </div>
+            </div>
+
+            <div class="projects-box reveal">
                 <div class="projects-info">
                     <i class="bx bxl-spring-boot"></i>
-                    <h4>Springboot Application</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni voluptates tempore vitae, enim nobis omnis odio sequi alias deserunt nisi? Similique eius ducimus sequi. Harum quam impedit natus tenetur neque?</p>
+                    <h4>Spring Boot Services</h4>
+                    <p>REST APIs with data validation and optimized queries across relational databases. Built with layered architecture and unit tests.</p>
+                    <div class="tags">
+                        <span class="tag">Java</span>
+                        <span class="tag">Spring Boot</span>
+                        <span class="tag">SQL</span>
+                        <span class="tag">JUnit</span>
+                    </div>
                 </div>
-                <div class="social-icons-2">
-                    <a href="https://github.com/LLOKAI/SpringBootProject" target="_blank">
-                        <i class="bx bxl-github"></i>
-                    </a>
+                <div class="project-links">
+                    <a href="https://github.com/LLOKAI/SpringBootProject" target="_blank" class="chip"><i class='bx bxl-github'></i> Repo</a>
                 </div>
             </div>
 
-            <div class="projects-box">
+            <div class="projects-box reveal">
                 <div class="projects-info">
                     <i class="bx bxl-angular"></i>
-                    <h4>Angular Application</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni voluptates tempore vitae, enim nobis omnis odio sequi alias deserunt nisi? Similique eius ducimus sequi. Harum quam impedit natus tenetur neque?</p>
+                    <h4>Angular Client</h4>
+                    <p>Responsive UI with reusable components and API integrations. Emphasis on accessibility and maintainability.</p>
+                    <div class="tags">
+                        <span class="tag">Angular</span>
+                        <span class="tag">TypeScript</span>
+                        <span class="tag">REST</span>
+                    </div>
                 </div>
-                <div class="social-icons-2">
-                    <a href="https://github.com/LLOKAI/AngularProject1" target="_blank">
-                        <i class="bx bxl-github"></i>
-                    </a>
+                <div class="project-links">
+                    <a href="https://github.com/LLOKAI/AngularProject1" target="_blank" class="chip"><i class='bx bxl-github'></i> Repo</a>
                 </div>
             </div>
 
-            <div class="projects-box">
+            <div class="projects-box reveal">
                 <div class="projects-info">
                     <i class="bx bx-laptop"></i>
                     <h4>Portfolio Website</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni voluptates tempore vitae, enim nobis omnis odio sequi alias deserunt nisi? Similique eius ducimus sequi. Harum quam impedit natus tenetur neque?</p>
+                    <p>This site—clean, responsive, and accessible, with subtle animations and a purple-first theme.</p>
+                    <div class="tags">
+                        <span class="tag">HTML</span>
+                        <span class="tag">CSS</span>
+                        <span class="tag">JavaScript</span>
+                    </div>
                 </div>
-                <div class="social-icons-2">
-                    <a href="https://github.com/LLOKAI/PortfolioWebsite" target="_blank">
-                        <i class="bx bxl-github"></i>
-                    </a>
+                <div class="project-links">
+                    <a href="https://github.com/LLOKAI/PortfolioWebsite" target="_blank" class="chip"><i class='bx bxl-github'></i> Repo</a>
                 </div>
             </div>
         </div>
@@ -117,74 +169,97 @@
 
     <section class="experience" id="experience">
         <h2 class="heading">Experience</h2>
+        <div class="experience-container timeline">
+            <article class="exp-card reveal">
+                <header>
+                    <h3>Full‑Stack Developer</h3>
+                    <p class="exp-meta">Cloud2 Software Inc • Mississauga, ON • Jul 2024 – Present</p>
+                </header>
+                <ul>
+                    <li>Resolved 150+ SonarQube issues and increased unit test coverage from 19% → 85%.</li>
+                    <li>Built and maintained full‑stack features with React and Spring Boot; wrote optimized SQL.</li>
+                    <li>Delivered in Agile sprints with code reviews and stakeholder communication.</li>
+                </ul>
+            </article>
+            <article class="exp-card reveal">
+                <header>
+                    <h3>Software Engineering Research Assistant</h3>
+                    <p class="exp-meta">HSRA Inc. • Waterloo, ON • May 2025 – Jul 2025</p>
+                </header>
+                <ul>
+                    <li>Automated Python scripts for data validation and QA in ML pipelines.</li>
+                    <li>Designed and tested ML models for patient health data analysis.</li>
+                    <li>Authored technical documentation and test procedures for maintainability.</li>
+                </ul>
+            </article>
+        </div>
+    </section>
 
-        <div class="experience-container">
-            
-            <div class="experience-box">
-                <h4>Frontend Development</h4>
-                <div class="language-icons">
-                    <div class="language-item">
-                        <img src="images/html.png" alt="html logo">
-                        <span>HTML</span>
-                    </div>
-                    <div class="language-item">
-                        <img src="images/css.png" alt="css logo">
-                        <span>CSS</span>
-                    </div>
-                    <div class="language-item">
-                        <img src="images/javascript.png" alt="javascript logo">
-                        <span>JavaScript</span>
-                    </div>
-                    <div class="language-item">
-                        <img src="images/angular.png" alt="angular logo">
-                        <span>Angular</span>
-                    </div>
-                    <div class="language-item">
-                        <img src="images/typescript.png" alt="typescript logo">
-                        <span>TypeScript</span>
-                    </div>
+    <section class="skills" id="skills">
+        <h2 class="heading">Skills</h2>
+        <div class="skills-grid">
+            <div class="skills-card reveal">
+                <h4>Languages & Frameworks</h4>
+                <div class="chips">
+                    <span class="chip">Java</span>
+                    <span class="chip">TypeScript</span>
+                    <span class="chip">Python</span>
+                    <span class="chip">React</span>
+                    <span class="chip">Spring Boot</span>
+                    <span class="chip">HTML</span>
+                    <span class="chip">CSS</span>
+                    <span class="chip">JavaScript</span>
                 </div>
             </div>
-            
-            <div class="experience-box">
-                <h4>Backend Development</h4>
-                <div class="language-icons">
-                    <div class="language-item">
-                        <img src="images/java.png" alt="java logo">
-                        <span>Java</span>
-                    </div>
-                    <div class="language-item">
-                        <img src="images/springboot.png" alt="spring boot logo">
-                        <span>Spring Boot</span>
-                    </div>
-                    <div class="language-item">
-                        <img src="images/csharp.png" alt="c sharp logo">
-                        <span>C#</span>
-                    </div>
-                    <div class="language-item">
-                        <img src="images/dotnet.png" alt=".NET logo">
-                        <span>.NET</span>
-                    </div>
-                    <div class="language-item">
-                        <img src="images/c.png" alt="c logo">
-                        <span>C</span>
-                    </div>
+            <div class="skills-card reveal">
+                <h4>Databases</h4>
+                <div class="chips">
+                    <span class="chip">SQL</span>
+                    <span class="chip">PostgreSQL</span>
+                    <span class="chip">MongoDB</span>
                 </div>
-            </div>            
+            </div>
+            <div class="skills-card reveal">
+                <h4>Cloud & DevOps</h4>
+                <div class="chips">
+                    <span class="chip">Docker</span>
+                    <span class="chip">AWS</span>
+                    <span class="chip">Azure</span>
+                    <span class="chip">Jenkins</span>
+                    <span class="chip">Git</span>
+                    <span class="chip">GitHub</span>
+                </div>
+            </div>
+            <div class="skills-card reveal">
+                <h4>Testing & Practices</h4>
+                <div class="chips">
+                    <span class="chip">JUnit</span>
+                    <span class="chip">Selenium</span>
+                    <span class="chip">Playwright</span>
+                    <span class="chip">CI/CD</span>
+                    <span class="chip">Agile/Scrum</span>
+                    <span class="chip">Microservices</span>
+                    <span class="chip">API Development</span>
+                </div>
+            </div>
         </div>
     </section>
     
     <section class="contact" id="contact">
         <h2 class="heading">Contact <span>Me</span></h2>
-        <p class="contact-text">Let's get in touch!</p>
+        <p class="contact-text">Let’s get in touch!</p>
         
         <div class="contact-container">
             <a href="mailto:lokaisiw@sheridancollege.ca" class="contact-btn">lokaisiw@sheridancollege.ca</a>
-            <a href="https://www.linkedin.com/in/william-lokaisingh/" class="contact-btn" target="_blank">
+            <a href="https://www.linkedin.com/in/william-lokaisingh/" class="contact-btn" target="_blank" rel="noopener">
                 <i class="bx bxl-linkedin"></i> LinkedIn
             </a>
+            <a href="https://github.com/LLOKAI" class="contact-btn" target="_blank" rel="noopener">
+                <i class="bx bxl-github"></i> GitHub
+            </a>
+            <a href="tel:16475284198" class="contact-btn"><i class='bx bx-phone'></i> 647‑528‑4198</a>
         </div>
-    
+        <a href="#home" class="to-top" aria-label="Back to top"><i class='bx bx-chevron-up'></i></a>
     </section>
 
     <footer class="footer">
@@ -206,6 +281,9 @@
             </li>
             <li>
                 <a href="#experience">Experience</a>
+            </li>
+            <li>
+                <a href="#skills">Skills</a>
             </li>
             <li>
                 <a href="#contact">Contact</a>
