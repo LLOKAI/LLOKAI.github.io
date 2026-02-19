@@ -3,13 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>William (Liam) Lokaisingh – Portfolio</title>
-    <meta name="description" content="William (Liam) Lokaisingh – Full-Stack Developer and SDNE student at Sheridan. Spring Boot, React, SQL, AWS, Docker. Projects: FindIT, Portfolio, Angular.">
-    <meta name="theme-color" content="#7c3aed">
-    <meta property="og:title" content="William (Liam) Lokaisingh – Portfolio">
-    <meta property="og:description" content="Full-Stack Developer | Spring Boot • React • SQL">
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://github.com/LLOKAI">
+    <title>William Lokaisingh - Portfolio Website</title>
     <link rel="stylesheet" href="css/styles.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -18,77 +12,80 @@
 </head>
 <body>
     <header class="header">
-        <a href="#home" class="logo" aria-label="Go to home"> William <span>Lokaisingh</span></a>
+        <a href="#home" class="logo">Liam <span>Lokaisingh</span></a>
 
         <i class="bx bx-menu" id="menu-icon"></i>
 
         <nav class="navbar">
+            <a href="#home">Home</a>
             <a href="#about">About</a>
             <a href="#projects">Projects</a>
             <a href="#experience">Experience</a>
-            <a href="#skills">Skills</a>
             <a href="#contact">Contact</a>
         </nav>
     </header>    
 
     <section class="home" id="home">
         <div class="home-content">
-            <h3>Hello, I'm</h3>
-            <h1><span>William (Liam) Lokaisingh</span></h1>
-            <h3 class="highlight">Full-Stack Developer • SDNE @ Sheridan (2023–2026)</h3>
-            <p class="subtle">Oakville, ON • Spring Boot • React • SQL • AWS • Docker</p>
+            <h3>Hello, I’m</h3>
+            <h1><span>William “Liam” Lokaisingh</span></h1>
+            <h3 class="highlight">Full-Stack Developer | Software Development & Network Engineering Student</h3>
+            <p>
+                I build reliable full-stack software with Java, Spring Boot, React, SQL, and Python,
+                with a strong focus on testing, maintainability, and production-ready delivery.
+            </p>
 
-            <div class="btn-group" role="group" aria-label="Primary actions">
-                <a href="assets/WilliamLokaisingh_Resume.pdf" target="_blank" class="btn" aria-label="Open resume in new tab">Download Resume</a>
+            <div class="home-meta">
+                <div class="meta-item">Sheridan College • Grad Apr 2026</div>
+                <div class="meta-item">Cloud2 Software Inc • Full-Stack Developer</div>
+            </div>
+
+            <div class="btn-group">
+                <a href="assets/Generic_Resume_WilliamLokaisingh.pdf" target="_blank" class="btn">Download Resume</a>
                 <a href="#contact" class="btn">Contact</a>
             </div>
-
-            <div class="quick-contacts">
-                <a href="tel:16475284198" class="chip" aria-label="Call 647 528 4198"><i class='bx bx-phone'></i> 647-528-4198</a>
-                <a href="mailto:lokaisiw@sheridancollege.ca" class="chip" aria-label="Email Liam"><i class='bx bx-envelope'></i> Email</a>
-            </div>
-
-            <div class="social-icons" aria-label="Social links">
-                <a href="https://github.com/LLOKAI" target="_blank" aria-label="GitHub">
+            
+            <div class="social-icons">
+                <a href="https://github.com/LLOKAI" target="_blank" rel="noopener noreferrer" aria-label="GitHub Profile">
                     <i class="bx bxl-github"></i>
                 </a>
-                <a href="https://www.linkedin.com/in/william-lokaisingh/" target="_blank" aria-label="LinkedIn">
+                <a href="https://www.linkedin.com/in/william-lokaisingh/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn Profile">
                     <i class="bx bxl-linkedin"></i>
                 </a>
             </div>
         </div>
 
         <div class="home-img">
-            <img src="images/image.jpg" alt="Portrait of William (Liam) Lokaisingh">
+            <img src="images/image.jpg" alt="Portrait of William Liam Lokaisingh">
         </div>
     </section>
 
     <section class="about" id="about">
 
         <div class="about-img">
-            <img src="images/image.jpg" alt="William (Liam) Lokaisingh profile">
+            <img src="images/image.jpg" alt="William Liam Lokaisingh profile image">
         </div>
 
         <div class="about-content">
             <h2>About <span>Me</span></h2>
             <p>
-                I’m a Full-Stack Developer and Software Development & Network Engineering student at Sheridan
-                (Jan 2023 – Apr 2026). I build reliable, testable systems across the stack using Spring Boot,
-                React, and SQL. I’ve improved code quality and delivery speed on real-world teams, raising
-                coverage, resolving SonarQube issues, and shipping features in agile sprints.
+                I’m a Software Development & Network Engineering student at Sheridan College (Expected Graduation: April 2026)
+                with hands-on industry experience delivering full-stack features and improving code quality at scale.
+                I enjoy building practical systems, writing clean APIs, and collaborating in Agile teams.
             </p>
-            <p class="about-highlights">
-                Recently: Full‑Stack Developer @ Cloud2 Software Inc (Jul 2024 – Present) and Software Engineering
-                Research Assistant @ HSRA Inc. (May 2025 – Jul 2025).
-            </p>
-            <div class="tags">
-                <span class="tag">Spring Boot</span>
-                <span class="tag">React</span>
-                <span class="tag">SQL</span>
-                <span class="tag">AWS</span>
-                <span class="tag">Docker</span>
-                <span class="tag">CI/CD</span>
+
+            <div class="about-grid">
+                <div class="about-card">
+                    <h4>Education</h4>
+                    <p>Software Development & Network Engineering<br>Sheridan College, Oakville, ON</p>
+                </div>
+                <div class="about-card">
+                    <h4>Core Stack</h4>
+                    <p>Java • Spring Boot • React • TypeScript • SQL • Python</p>
+                </div>
             </div>
+
+            <a href="assets/Generic_Resume_WilliamLokaisingh.pdf" target="_blank" rel="noopener noreferrer" class="btn">View Full Resume</a>
         </div>
     </section>
 
@@ -97,177 +94,120 @@
 
         <div class="projects-container">
 
-            <div class="projects-box reveal">
+            <div class="projects-box">
                 <div class="projects-info">
-                    <i class="bx bx-map"></i>
-                    <h4>FindIT – Indoor Navigation</h4>
-                    <p>Full‑stack platform with RESTful APIs, secure auth, and complex SQL for structured data serving a responsive React UI. Includes boundary, usability, and cross‑browser testing.</p>
-                    <div class="tags">
-                        <span class="tag">Spring Boot</span>
-                        <span class="tag">React</span>
-                        <span class="tag">SQL</span>
-                        <span class="tag">Auth</span>
-                        <span class="tag">Testing</span>
-                    </div>
+                    <i class="bx bx-map-alt"></i>
+                    <h4>FindIT – Indoor Navigation Platform</h4>
+                    <p>Full-stack application built with Spring Boot, React, and SQL featuring secure authentication, REST APIs, and robust testing for production-ready performance.</p>
                 </div>
-                <div class="project-links">
-                    <a href="https://github.com/LLOKAI" target="_blank" class="chip"><i class='bx bxl-github'></i> View Code</a>
-                    <a href="#contact" class="chip"><i class='bx bx-mail-send'></i> Request Demo</a>
+                <div class="social-icons-2">
+                    <a href="https://tryfindit.io" target="_blank" rel="noopener noreferrer" aria-label="FindIT live demo">
+                        <i class="bx bx-link-external"></i>
+                    </a>
+                    <a href="https://tryfindit.io" target="_blank" rel="noopener noreferrer" aria-label="FindIT website">
+                        <i class="bx bx-globe"></i>
+                    </a>
+                    <a href="https://github.com/FindIT-Nav" target="_blank" rel="noopener noreferrer" aria-label="FindIT GitHub">
+                        <i class="bx bxl-github"></i>
+                    </a>
                 </div>
             </div>
 
-            <div class="projects-box reveal">
+            <div class="projects-box">
                 <div class="projects-info">
-                    <i class="bx bxl-spring-boot"></i>
-                    <h4>Spring Boot Services</h4>
-                    <p>REST APIs with data validation and optimized queries across relational databases. Built with layered architecture and unit tests.</p>
-                    <div class="tags">
-                        <span class="tag">Java</span>
-                        <span class="tag">Spring Boot</span>
-                        <span class="tag">SQL</span>
-                        <span class="tag">JUnit</span>
-                    </div>
+                    <i class="bx bx-list-check"></i>
+                    <h4>Google Forms Quiz Builder</h4>
+                    <p>Quiz creation and management project focused on building a streamlined workflow for form-based assessments and question organization.</p>
                 </div>
-                <div class="project-links">
-                    <a href="https://github.com/LLOKAI/SpringBootProject" target="_blank" class="chip"><i class='bx bxl-github'></i> Repo</a>
+                <div class="social-icons-2">
+                    <a href="#" aria-label="Google Forms Quiz Builder demo placeholder">
+                        <i class="bx bx-book-content"></i>
+                    </a>
+                    <a href="https://github.com/LLOKAI/google-forms-quiz-builder" target="_blank" rel="noopener noreferrer" aria-label="Google Forms Quiz Builder GitHub">
+                        <i class="bx bxl-github"></i>
+                    </a>
                 </div>
             </div>
 
-            <div class="projects-box reveal">
+            <div class="projects-box">
                 <div class="projects-info">
-                    <i class="bx bxl-angular"></i>
-                    <h4>Angular Client</h4>
-                    <p>Responsive UI with reusable components and API integrations. Emphasis on accessibility and maintainability.</p>
-                    <div class="tags">
-                        <span class="tag">Angular</span>
-                        <span class="tag">TypeScript</span>
-                        <span class="tag">REST</span>
-                    </div>
+                    <i class="bx bx-conversation"></i>
+                    <h4>SpeakingBuddy</h4>
+                    <p>Communication-focused application project built to support guided speaking practice with a user-friendly interface and structured interaction flow.</p>
                 </div>
-                <div class="project-links">
-                    <a href="https://github.com/LLOKAI/AngularProject1" target="_blank" class="chip"><i class='bx bxl-github'></i> Repo</a>
-                </div>
-            </div>
-
-            <div class="projects-box reveal">
-                <div class="projects-info">
-                    <i class="bx bx-laptop"></i>
-                    <h4>Portfolio Website</h4>
-                    <p>This site—clean, responsive, and accessible, with subtle animations and a purple-first theme.</p>
-                    <div class="tags">
-                        <span class="tag">HTML</span>
-                        <span class="tag">CSS</span>
-                        <span class="tag">JavaScript</span>
-                    </div>
-                </div>
-                <div class="project-links">
-                    <a href="https://github.com/LLOKAI/PortfolioWebsite" target="_blank" class="chip"><i class='bx bxl-github'></i> Repo</a>
+                <div class="social-icons-2">
+                    <a href="#" aria-label="SpeakingBuddy demo placeholder">
+                        <i class="bx bx-file"></i>
+                    </a>
+                    <a href="https://github.com/LLOKAI/speakingbuddy" target="_blank" rel="noopener noreferrer" aria-label="SpeakingBuddy GitHub">
+                        <i class="bx bxl-github"></i>
+                    </a>
                 </div>
             </div>
         </div>
     </section>
 
     <section class="experience" id="experience">
-        <h2 class="heading">Experience</h2>
-        <div class="experience-container timeline">
-            <article class="exp-card reveal">
-                <header>
-                    <h3>Full‑Stack Developer</h3>
-                    <p class="exp-meta">Cloud2 Software Inc • Mississauga, ON • Jul 2024 – Present</p>
-                </header>
-                <ul>
-                    <li>Resolved 150+ SonarQube issues and increased unit test coverage from 19% → 85%.</li>
-                    <li>Built and maintained full‑stack features with React and Spring Boot; wrote optimized SQL.</li>
-                    <li>Delivered in Agile sprints with code reviews and stakeholder communication.</li>
-                </ul>
-            </article>
-            <article class="exp-card reveal">
-                <header>
-                    <h3>Software Engineering Research Assistant</h3>
-                    <p class="exp-meta">HSRA Inc. • Waterloo, ON • May 2025 – Jul 2025</p>
-                </header>
-                <ul>
-                    <li>Automated Python scripts for data validation and QA in ML pipelines.</li>
-                    <li>Designed and tested ML models for patient health data analysis.</li>
-                    <li>Authored technical documentation and test procedures for maintainability.</li>
-                </ul>
-            </article>
-        </div>
-    </section>
+        <h2 class="heading">Professional <span>Experience</span></h2>
 
-    <section class="skills" id="skills">
-        <h2 class="heading">Skills</h2>
-        <div class="skills-grid">
-            <div class="skills-card reveal">
-                <h4>Languages & Frameworks</h4>
-                <div class="chips">
-                    <span class="chip">Java</span>
-                    <span class="chip">TypeScript</span>
-                    <span class="chip">Python</span>
-                    <span class="chip">React</span>
-                    <span class="chip">Spring Boot</span>
-                    <span class="chip">HTML</span>
-                    <span class="chip">CSS</span>
-                    <span class="chip">JavaScript</span>
+        <div class="experience-container">
+            
+            <div class="experience-box">
+                <h4>Full-Stack Developer</h4>
+                <p class="experience-meta">Cloud2 Software Inc • Mississauga, ON • Jul 2024 – Present</p>
+                <ul class="experience-list">
+                    <li>Resolved 150+ SonarQube code issues and increased unit test coverage from 19% to 85%.</li>
+                    <li>Built and maintained features using React + Spring Boot with optimized SQL data queries.</li>
+                    <li>Collaborated in Agile sprints, code reviews, and stakeholder updates to ship reliable features.</li>
+                </ul>
+                <div class="experience-links">
+                    <a href="https://www.cloud2software.com/" target="_blank" rel="noopener noreferrer" class="experience-link">Company Site</a>
+                    <a href="https://github.com/Cloud2SoftwareInc" target="_blank" rel="noopener noreferrer" class="experience-link">GitHub Org</a>
                 </div>
             </div>
-            <div class="skills-card reveal">
-                <h4>Databases</h4>
-                <div class="chips">
-                    <span class="chip">SQL</span>
-                    <span class="chip">PostgreSQL</span>
-                    <span class="chip">MongoDB</span>
-                </div>
-            </div>
-            <div class="skills-card reveal">
-                <h4>Cloud & DevOps</h4>
-                <div class="chips">
-                    <span class="chip">Docker</span>
-                    <span class="chip">AWS</span>
-                    <span class="chip">Azure</span>
-                    <span class="chip">Jenkins</span>
-                    <span class="chip">Git</span>
-                    <span class="chip">GitHub</span>
-                </div>
-            </div>
-            <div class="skills-card reveal">
-                <h4>Testing & Practices</h4>
-                <div class="chips">
-                    <span class="chip">JUnit</span>
-                    <span class="chip">Selenium</span>
-                    <span class="chip">Playwright</span>
-                    <span class="chip">CI/CD</span>
-                    <span class="chip">Agile/Scrum</span>
-                    <span class="chip">Microservices</span>
-                    <span class="chip">API Development</span>
-                </div>
-            </div>
+            
+            <div class="experience-box">
+                <h4>Software Engineering Research Assistant</h4>
+                <p class="experience-meta">Healthcare Systems Research & Analysis Inc. • Waterloo, ON • May 2025 – Jul 2025</p>
+                <ul class="experience-list">
+                    <li>Developed Python automation for validation and QA across machine learning data pipelines.</li>
+                    <li>Tested and supported ML model workflows for patient health data accuracy and reliability.</li>
+                    <li>Produced technical documentation and test procedures to improve long-term maintainability.</li>
+                </ul>
+            </div>            
+        </div>
+
+        <div class="skills-cloud">
+            <span>Java</span><span>TypeScript</span><span>Python</span><span>React</span><span>Spring Boot</span>
+            <span>SQL</span><span>PostgreSQL</span><span>MongoDB</span><span>Docker</span><span>AWS</span>
+            <span>Azure</span><span>Jenkins</span><span>JUnit</span><span>Selenium</span><span>Playwright</span>
+            <span>Git</span><span>GitHub</span><span>Postman</span><span>Jira</span><span>SonarQube</span>
         </div>
     </section>
     
     <section class="contact" id="contact">
         <h2 class="heading">Contact <span>Me</span></h2>
-        <p class="contact-text">Let’s get in touch!</p>
+        <p class="contact-text">Open to internships, new grad roles, and full-stack opportunities.</p>
         
         <div class="contact-container">
             <a href="mailto:lokaisiw@sheridancollege.ca" class="contact-btn">lokaisiw@sheridancollege.ca</a>
-            <a href="https://www.linkedin.com/in/william-lokaisingh/" class="contact-btn" target="_blank" rel="noopener">
+            <a href="tel:+16475284198" class="contact-btn">647-528-4198</a>
+            <a href="https://www.linkedin.com/in/william-lokaisingh/" class="contact-btn" target="_blank" rel="noopener noreferrer">
                 <i class="bx bxl-linkedin"></i> LinkedIn
             </a>
-            <a href="https://github.com/LLOKAI" class="contact-btn" target="_blank" rel="noopener">
+            <a href="https://github.com/LLOKAI" class="contact-btn" target="_blank" rel="noopener noreferrer">
                 <i class="bx bxl-github"></i> GitHub
             </a>
-            <a href="tel:16475284198" class="contact-btn"><i class='bx bx-phone'></i> 647‑528‑4198</a>
         </div>
-        <a href="#home" class="to-top" aria-label="Back to top"><i class='bx bx-chevron-up'></i></a>
+    
     </section>
 
     <footer class="footer">
         <div class="social-icons">
-            <a href="https://github.com/LLOKAI" target="_blank">
+            <a href="https://github.com/LLOKAI" target="_blank" rel="noopener noreferrer" aria-label="GitHub Profile">
                 <i class="bx bxl-github"></i>
             </a>
-            <a href="https://www.linkedin.com/in/william-lokaisingh/" target="_blank">
+            <a href="https://www.linkedin.com/in/william-lokaisingh/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn Profile">
                 <i class="bx bxl-linkedin"></i>
             </a>
         </div>
@@ -283,15 +223,12 @@
                 <a href="#experience">Experience</a>
             </li>
             <li>
-                <a href="#skills">Skills</a>
-            </li>
-            <li>
                 <a href="#contact">Contact</a>
             </li>
         </ul>
 
         <p class="copyright">
-            &#169 William Lokaisingh | All Rights Reserved
+            &#169; William “Liam” Lokaisingh | All Rights Reserved
         </p>
     </footer>
 
