@@ -35,6 +35,28 @@ body {
     line-height: 1.6;
 }
 
+.skip-link {
+    position: absolute;
+    top: -40px;
+    left: 1rem;
+    z-index: 1000;
+    padding: 0.8rem 1.2rem;
+    background: var(--main-color);
+    color: #040308;
+    border-radius: 0.8rem;
+    font-size: 1.4rem;
+}
+
+.skip-link:focus {
+    top: 1rem;
+}
+
+a:focus-visible,
+button:focus-visible {
+    outline: 2px solid var(--second-color);
+    outline-offset: 3px;
+}
+
 .header {
     position: fixed;
     width: 100%;
@@ -141,6 +163,54 @@ section {
     margin-top: 2rem;
     display: grid;
     gap: 1rem;
+}
+
+.results-strip {
+    margin-top: 2rem;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(130px, 1fr));
+    gap: 1rem;
+    width: 100%;
+}
+
+.result-item {
+    background: var(--surface-color);
+    border: 1px solid var(--border-color);
+    border-radius: 1.4rem;
+    padding: 1.2rem;
+    text-align: center;
+}
+
+.result-item strong {
+    display: block;
+    font-size: 2rem;
+    color: var(--second-color);
+    line-height: 1.2;
+}
+
+.result-item span {
+    color: var(--muted-text);
+    font-size: 1.25rem;
+}
+
+.quick-links {
+    margin-top: 1.4rem;
+}
+
+.quick-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: var(--second-color);
+    font-size: 1.45rem;
+    border-bottom: 1px dashed var(--border-color);
+    padding-bottom: 0.2rem;
+    transition: 0.2s ease;
+}
+
+.quick-link:hover {
+    color: var(--text-color);
+    border-color: var(--main-color);
 }
 
 .meta-item {
@@ -321,6 +391,32 @@ section {
     gap: 2rem;
 }
 
+.project-filters {
+    margin: 0 auto 2.2rem;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 0.8rem;
+}
+
+.filter-btn {
+    background: transparent;
+    color: var(--muted-text);
+    border: 1px solid var(--border-color);
+    border-radius: 999px;
+    padding: 0.7rem 1.2rem;
+    font-size: 1.35rem;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+.filter-btn:hover,
+.filter-btn.active {
+    color: var(--text-color);
+    border-color: var(--main-color);
+    background: rgba(155, 93, 229, 0.14);
+}
+
 .projects-box {
     display: flex;
     flex-direction: column;
@@ -333,6 +429,10 @@ section {
     transition: 0.3s ease-in-out;
     position: relative;
     overflow: hidden;
+}
+
+.projects-box.is-hidden {
+    display: none;
 }
 
 .projects-box:hover {
@@ -458,6 +558,40 @@ section {
     border-radius: 999px;
 }
 
+.testimonials {
+    background-color: transparent;
+    min-height: 55vh;
+}
+
+.testimonials-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.6rem;
+}
+
+.testimonial-card {
+    background: var(--surface-color);
+    border: 1px solid var(--border-color);
+    border-radius: 1.6rem;
+    padding: 2rem;
+}
+
+.testimonial-card p {
+    color: var(--muted-text);
+    font-size: 1.55rem;
+    line-height: 1.85;
+}
+
+.testimonial-card h4 {
+    margin-top: 1.4rem;
+    font-size: 1.7rem;
+}
+
+.testimonial-card span {
+    font-size: 1.35rem;
+    color: var(--second-color);
+}
+
 .contact {
     background-color: transparent;
     min-height: 65vh;
@@ -548,6 +682,68 @@ section {
     color: var(--muted-text);
 }
 
+.case-study-page {
+    min-height: 100vh;
+    padding: 12rem 12% 6rem;
+}
+
+.case-study-header h1 {
+    font-size: clamp(3.4rem, 5vw, 5rem);
+    line-height: 1.15;
+}
+
+.case-study-header p {
+    margin-top: 1rem;
+    font-size: 1.65rem;
+    color: var(--muted-text);
+    max-width: 70ch;
+}
+
+.case-study-grid {
+    margin-top: 2rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 1.4rem;
+}
+
+.case-study-card {
+    background: var(--surface-color);
+    border: 1px solid var(--border-color);
+    border-radius: 1.4rem;
+    padding: 1.6rem;
+}
+
+.case-study-card h3 {
+    font-size: 1.8rem;
+    margin-bottom: 0.5rem;
+}
+
+.case-study-card p,
+.case-study-card li {
+    color: var(--muted-text);
+    font-size: 1.45rem;
+    line-height: 1.8;
+}
+
+.case-study-card a {
+    color: var(--second-color);
+}
+
+.case-study-card a:hover {
+    color: var(--text-color);
+}
+
+.case-study-card ul {
+    padding-left: 1.8rem;
+}
+
+.case-study-actions {
+    margin-top: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
 @media (max-width: 1024px) {
     #menu-icon {
         display: block;
@@ -594,6 +790,10 @@ section {
     .home-content {
         align-items: center;
         text-align: center;
+    }
+
+    .results-strip {
+        grid-template-columns: 1fr;
     }
 
     .home-img img,
@@ -646,5 +846,14 @@ section {
 
     .contact-btn {
         width: 100%;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    * {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
     }
 }

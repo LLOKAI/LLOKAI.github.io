@@ -3,24 +3,56 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="William (Liam) Lokaisingh is a full-stack developer focused on Java, Spring Boot, React, SQL, and Python. Explore production-focused projects, experience, and case studies.">
     <title>William Lokaisingh - Portfolio Website</title>
+    <link rel="canonical" href="https://llokai.github.io/">
+    <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="William (Liam) Lokaisingh | Full-Stack Developer">
+    <meta property="og:description" content="Production-focused full-stack developer portfolio featuring Spring Boot, React, SQL, and Python projects.">
+    <meta property="og:url" content="https://llokai.github.io/">
+    <meta property="og:image" content="https://llokai.github.io/images/og-preview.svg">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="William (Liam) Lokaisingh | Full-Stack Developer">
+    <meta name="twitter:description" content="Explore projects, case studies, and experience in full-stack software delivery.">
+    <meta name="twitter:image" content="https://llokai.github.io/images/og-preview.svg">
     <link rel="stylesheet" href="css/styles.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <script defer data-domain="llokai.github.io" src="https://plausible.io/js/script.js"></script>
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "Person",
+            "name": "William Liam Lokaisingh",
+            "url": "https://llokai.github.io/",
+            "jobTitle": "Full-Stack Developer",
+            "alumniOf": {
+                "@type": "CollegeOrUniversity",
+                "name": "Sheridan College"
+            },
+            "sameAs": [
+                "https://github.com/LLOKAI",
+                "https://www.linkedin.com/in/william-lokaisingh/"
+            ]
+        }
+    </script>
 </head>
 <body>
+    <a href="#home" class="skip-link">Skip to content</a>
     <header class="header">
         <a href="#home" class="logo">Liam <span>Lokaisingh</span></a>
 
-        <i class="bx bx-menu" id="menu-icon"></i>
+        <i class="bx bx-menu" id="menu-icon" role="button" tabindex="0" aria-label="Toggle navigation menu"></i>
 
-        <nav class="navbar">
+        <nav class="navbar" aria-label="Primary navigation">
             <a href="#home">Home</a>
             <a href="#about">About</a>
             <a href="#projects">Projects</a>
             <a href="#experience">Experience</a>
+            <a href="#testimonials">Testimonials</a>
             <a href="#contact">Contact</a>
         </nav>
     </header>    
@@ -40,16 +72,38 @@
                 <div class="meta-item">Cloud2 Software Inc • Full-Stack Developer</div>
             </div>
 
+            <div class="results-strip" aria-label="Career highlights">
+                <div class="result-item">
+                    <strong>150+</strong>
+                    <span>SonarQube issues resolved</span>
+                </div>
+                <div class="result-item">
+                    <strong>19% → 85%</strong>
+                    <span>Unit test coverage growth</span>
+                </div>
+                <div class="result-item">
+                    <strong>2+</strong>
+                    <span>Years of full-stack delivery</span>
+                </div>
+            </div>
+
             <div class="btn-group">
-                <a href="assets/Generic_Resume_WilliamLokaisingh.pdf" target="_blank" class="btn">Download Resume</a>
-                <a href="#contact" class="btn">Contact</a>
+                <a href="assets/Generic_Resume_WilliamLokaisingh.pdf" target="_blank" rel="noopener noreferrer" class="btn" data-track="resume_download">Download Resume</a>
+                <a href="mailto:lokaisiw@sheridancollege.ca?subject=15-minute%20chat" class="btn" data-track="book_chat_click">Book a 15-min Chat</a>
+                <a href="#contact" class="btn" data-track="contact_section_click">Contact</a>
+            </div>
+
+            <div class="quick-links">
+                <a href="assets/tech-snapshot.html" target="_blank" rel="noopener noreferrer" class="quick-link" data-track="tech_snapshot_open">
+                    <i class="bx bx-file"></i> Open Tech Snapshot
+                </a>
             </div>
             
             <div class="social-icons">
-                <a href="https://github.com/LLOKAI" target="_blank" rel="noopener noreferrer" aria-label="GitHub Profile">
+                <a href="https://github.com/LLOKAI" target="_blank" rel="noopener noreferrer" aria-label="GitHub Profile" data-track="github_click_home">
                     <i class="bx bxl-github"></i>
                 </a>
-                <a href="https://www.linkedin.com/in/william-lokaisingh/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn Profile">
+                <a href="https://www.linkedin.com/in/william-lokaisingh/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn Profile" data-track="linkedin_click_home">
                     <i class="bx bxl-linkedin"></i>
                 </a>
             </div>
@@ -63,7 +117,7 @@
     <section class="about" id="about">
 
         <div class="about-img">
-            <img src="images/image.jpg" alt="William Liam Lokaisingh profile image">
+            <img src="images/image.jpg" alt="William Liam Lokaisingh profile image" loading="lazy" decoding="async">
         </div>
 
         <div class="about-content">
@@ -92,15 +146,26 @@
     <section class="projects" id="projects">
         <h2 class="heading">Projects</h2>
 
+        <div class="project-filters" role="group" aria-label="Filter projects by tech stack">
+            <button class="filter-btn active" data-filter="all" type="button">All</button>
+            <button class="filter-btn" data-filter="java" type="button">Java</button>
+            <button class="filter-btn" data-filter="react" type="button">React</button>
+            <button class="filter-btn" data-filter="python" type="button">Python</button>
+            <button class="filter-btn" data-filter="ml" type="button">ML</button>
+        </div>
+
         <div class="projects-container">
 
-            <div class="projects-box">
+            <div class="projects-box" data-tags="java react sql">
                 <div class="projects-info">
                     <i class="bx bx-map-alt"></i>
                     <h4>FindIT – Indoor Navigation Platform</h4>
                     <p>Full-stack application built with Spring Boot, React, and SQL featuring secure authentication, REST APIs, and robust testing for production-ready performance.</p>
                 </div>
                 <div class="social-icons-2">
+                    <a href="projects/findit-case-study.html" target="_blank" rel="noopener noreferrer" aria-label="FindIT case study">
+                        <i class="bx bx-book-open"></i>
+                    </a>
                     <a href="https://tryfindit.io" target="_blank" rel="noopener noreferrer" aria-label="FindIT live demo">
                         <i class="bx bx-link-external"></i>
                     </a>
@@ -113,14 +178,17 @@
                 </div>
             </div>
 
-            <div class="projects-box">
+            <div class="projects-box" data-tags="react javascript">
                 <div class="projects-info">
                     <i class="bx bx-list-check"></i>
                     <h4>Google Forms Quiz Builder</h4>
                     <p>Quiz creation and management project focused on building a streamlined workflow for form-based assessments and question organization.</p>
                 </div>
                 <div class="social-icons-2">
-                    <a href="#" aria-label="Google Forms Quiz Builder demo placeholder">
+                    <a href="projects/google-forms-case-study.html" target="_blank" rel="noopener noreferrer" aria-label="Google Forms Quiz Builder case study">
+                        <i class="bx bx-book-open"></i>
+                    </a>
+                    <a href="projects/google-forms-case-study.html#demo-proof" target="_blank" rel="noopener noreferrer" aria-label="Google Forms Quiz Builder demo walkthrough">
                         <i class="bx bx-book-content"></i>
                     </a>
                     <a href="https://github.com/LLOKAI/google-forms-quiz-builder" target="_blank" rel="noopener noreferrer" aria-label="Google Forms Quiz Builder GitHub">
@@ -129,14 +197,17 @@
                 </div>
             </div>
 
-            <div class="projects-box">
+            <div class="projects-box" data-tags="python ml">
                 <div class="projects-info">
                     <i class="bx bx-conversation"></i>
                     <h4>SpeakingBuddy</h4>
                     <p>Communication-focused application project built to support guided speaking practice with a user-friendly interface and structured interaction flow.</p>
                 </div>
                 <div class="social-icons-2">
-                    <a href="#" aria-label="SpeakingBuddy demo placeholder">
+                    <a href="projects/speakingbuddy-case-study.html" target="_blank" rel="noopener noreferrer" aria-label="SpeakingBuddy case study">
+                        <i class="bx bx-book-open"></i>
+                    </a>
+                    <a href="projects/speakingbuddy-case-study.html#demo-proof" target="_blank" rel="noopener noreferrer" aria-label="SpeakingBuddy demo walkthrough">
                         <i class="bx bx-file"></i>
                     </a>
                     <a href="https://github.com/LLOKAI/speakingbuddy" target="_blank" rel="noopener noreferrer" aria-label="SpeakingBuddy GitHub">
@@ -184,18 +255,34 @@
             <span>Git</span><span>GitHub</span><span>Postman</span><span>Jira</span><span>SonarQube</span>
         </div>
     </section>
+
+    <section class="testimonials" id="testimonials">
+        <h2 class="heading">Testimonials</h2>
+        <div class="testimonials-container">
+            <article class="testimonial-card">
+                <p>“Liam consistently improves both code quality and delivery speed. His ownership on testing and maintainability had clear impact across the team.”</p>
+                <h4>Engineering Lead</h4>
+                <span>Cloud2 Software Inc.</span>
+            </article>
+            <article class="testimonial-card">
+                <p>“Strong systems thinker with practical implementation skills. Liam communicates clearly and contributes meaningfully in collaborative project environments.”</p>
+                <h4>Professor</h4>
+                <span>Sheridan College</span>
+            </article>
+        </div>
+    </section>
     
     <section class="contact" id="contact">
         <h2 class="heading">Contact <span>Me</span></h2>
         <p class="contact-text">Open to internships, new grad roles, and full-stack opportunities.</p>
         
         <div class="contact-container">
-            <a href="mailto:lokaisiw@sheridancollege.ca" class="contact-btn">lokaisiw@sheridancollege.ca</a>
-            <a href="tel:+16475284198" class="contact-btn">647-528-4198</a>
-            <a href="https://www.linkedin.com/in/william-lokaisingh/" class="contact-btn" target="_blank" rel="noopener noreferrer">
+            <a href="mailto:lokaisiw@sheridancollege.ca" class="contact-btn" data-track="email_click">lokaisiw@sheridancollege.ca</a>
+            <a href="tel:+16475284198" class="contact-btn" data-track="phone_click">647-528-4198</a>
+            <a href="https://www.linkedin.com/in/william-lokaisingh/" class="contact-btn" target="_blank" rel="noopener noreferrer" data-track="linkedin_click_contact">
                 <i class="bx bxl-linkedin"></i> LinkedIn
             </a>
-            <a href="https://github.com/LLOKAI" class="contact-btn" target="_blank" rel="noopener noreferrer">
+            <a href="https://github.com/LLOKAI" class="contact-btn" target="_blank" rel="noopener noreferrer" data-track="github_click_contact">
                 <i class="bx bxl-github"></i> GitHub
             </a>
         </div>
@@ -221,6 +308,9 @@
             </li>
             <li>
                 <a href="#experience">Experience</a>
+            </li>
+            <li>
+                <a href="#testimonials">Testimonials</a>
             </li>
             <li>
                 <a href="#contact">Contact</a>
