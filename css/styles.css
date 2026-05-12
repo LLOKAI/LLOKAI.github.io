@@ -223,7 +223,20 @@ img {
     margin-top: 1.4rem;
 }
 
+.hero h2 {
+    max-width: 16ch;
+    margin-top: 1.2rem;
+    background: linear-gradient(100deg, var(--mint), var(--cyan) 54%, var(--rose));
+    background-clip: text;
+    color: transparent;
+    font-size: clamp(2.8rem, 4.2vw, 5rem);
+    font-weight: 900;
+    line-height: 1.02;
+    letter-spacing: 0;
+}
+
 .hero h1::selection,
+.hero h2::selection,
 .section-heading h2::selection {
     background: var(--amber);
     color: #08090b;
@@ -914,6 +927,11 @@ img {
 
     .hero h1 {
         font-size: 4.4rem;
+    }
+
+    .hero h2 {
+        max-width: 12ch;
+        font-size: 3.1rem;
     }
 
     .hero-stats,
