@@ -58,18 +58,36 @@
                     </a>
                 </div>
 
-                <div class="hero-stats" aria-label="Career highlights">
-                    <div>
-                        <strong data-count="200">0</strong>
-                        <span>SonarQube issues resolved</span>
+                <div class="hero-stats" aria-label="Career impact highlights">
+                    <div class="impact-card">
+                        <span class="impact-kicker">Code quality</span>
+                        <strong data-count="200" data-suffix="+">0</strong>
+                        <span class="impact-label">SonarQube issues resolved</span>
                     </div>
-                    <div>
-                        <strong data-count="85">0</strong>
-                        <span>test coverage achieved</span>
+                    <div class="impact-card">
+                        <span class="impact-kicker">Coverage</span>
+                        <strong data-count="85" data-suffix="%">0</strong>
+                        <span class="impact-label">test coverage achieved</span>
                     </div>
-                    <div>
-                        <strong data-count="10">0</strong>
-                        <span>services improved</span>
+                    <div class="impact-card">
+                        <span class="impact-kicker">Scale</span>
+                        <strong data-count="10" data-suffix="+">0</strong>
+                        <span class="impact-label">services improved</span>
+                    </div>
+                    <div class="impact-card">
+                        <span class="impact-kicker">Testing</span>
+                        <strong data-count="250" data-suffix="+">0</strong>
+                        <span class="impact-label">tests written across Jest, Playwright, and JUnit</span>
+                    </div>
+                    <div class="impact-card">
+                        <span class="impact-kicker">Leadership</span>
+                        <strong>Lead</strong>
+                        <span class="impact-label">frontend team at Cloud2</span>
+                    </div>
+                    <div class="impact-card">
+                        <span class="impact-kicker">Platform reach</span>
+                        <strong data-count="100" data-suffix="+">0</strong>
+                        <span class="impact-label">users across 2 applications</span>
                     </div>
                 </div>
             </div>
@@ -136,7 +154,7 @@
             <div class="section-kicker reveal">Selected Work</div>
             <div class="section-heading centered reveal">
                 <h2>Projects with real product shape.</h2>
-                <p>Capstone, automation, and communication tools that show the range: APIs, data, UX, testing, and delivery.</p>
+                <p>Capstone, full-stack applications, automation tools, and learning products that show APIs, data, UX, testing, and delivery.</p>
             </div>
 
             <div class="projects-grid">
@@ -161,16 +179,34 @@
 
                 <article class="project-card reveal" data-tilt>
                     <div class="project-topline">
-                        <span>Workflow Builder</span>
+                        <span>Full-Stack App</span>
+                        <i class="bx bx-briefcase"></i>
+                    </div>
+                    <h3>Job Tracker App</h3>
+                    <p>
+                        End-to-end job application tracker built with React, Express, and PostgreSQL, featuring CRUD
+                        workflows, tag-based filtering, search, and CSV export.
+                    </p>
+                    <div class="project-stack">
+                        <span>React</span><span>Express</span><span>PostgreSQL</span><span>CSV Export</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/LLOKAI/job-tracker-app" target="_blank" rel="noopener noreferrer" aria-label="Open Job Tracker App GitHub"><i class="bx bxl-github"></i></a>
+                    </div>
+                </article>
+
+                <article class="project-card reveal" data-tilt>
+                    <div class="project-topline">
+                        <span>Apps Script Automation</span>
                         <i class="bx bx-list-check"></i>
                     </div>
                     <h3>Google Forms Quiz Builder</h3>
                     <p>
-                        Quiz creation and management tool focused on structured assessment workflows, question organization,
-                        and cleaner form-based authoring.
+                        Automation that turns a Google Sheet of questions into a published Google Forms quiz with
+                        answer keys, scoring, image support, and Google Classroom posting.
                     </p>
                     <div class="project-stack">
-                        <span>Automation</span><span>Forms</span><span>UX Flow</span>
+                        <span>Google Apps Script</span><span>Forms API</span><span>Classroom</span>
                     </div>
                     <div class="project-links">
                         <a href="https://github.com/LLOKAI/google-forms-quiz-builder" target="_blank" rel="noopener noreferrer" aria-label="Open Google Forms Quiz Builder GitHub"><i class="bx bxl-github"></i></a>
@@ -184,14 +220,50 @@
                     </div>
                     <h3>SpeakingBuddy</h3>
                     <p>
-                        Guided speaking-practice application concept with a friendly interaction model, structured prompts,
-                        and an interface designed for repeated practice.
+                        Luxembourgish pronunciation trainer where users listen to native recordings, record attempts,
+                        and receive instant scoring and feedback powered by Praat acoustic analysis.
                     </p>
                     <div class="project-stack">
-                        <span>Product Design</span><span>Frontend</span><span>Practice Flow</span>
+                        <span>Python</span><span>Audio Analysis</span><span>Language Learning</span>
                     </div>
                     <div class="project-links">
                         <a href="https://github.com/LLOKAI/speakingbuddy" target="_blank" rel="noopener noreferrer" aria-label="Open SpeakingBuddy GitHub"><i class="bx bxl-github"></i></a>
+                    </div>
+                </article>
+
+                <article class="project-card reveal" data-tilt>
+                    <div class="project-topline">
+                        <span>Spring Boot App</span>
+                        <i class="bx bx-book-open"></i>
+                    </div>
+                    <h3>BookReviews Application</h3>
+                    <p>
+                        Full-stack Spring Boot and Thymeleaf application with secure login, role-based access control,
+                        CRUD flows for books and reviews, REST endpoints, and database persistence.
+                    </p>
+                    <div class="project-stack">
+                        <span>Java</span><span>Spring Boot</span><span>Spring Security</span><span>Thymeleaf</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/LLOKAI/BookReviewApplication" target="_blank" rel="noopener noreferrer" aria-label="Open BookReviews Application GitHub"><i class="bx bxl-github"></i></a>
+                    </div>
+                </article>
+
+                <article class="project-card reveal" data-tilt>
+                    <div class="project-topline">
+                        <span>Asset Pipeline</span>
+                        <i class="bx bx-cloud-upload"></i>
+                    </div>
+                    <h3>Sanskrit Assets Dashboard</h3>
+                    <p>
+                        React and Vite dashboard for uploading Sanskrit Pictionary flashcards, optional audio, and
+                        metadata directly into a GitHub-backed assets repository and JSON manifest.
+                    </p>
+                    <div class="project-stack">
+                        <span>React</span><span>Vite</span><span>GitHub API</span><span>Asset Workflow</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/LLOKAI/imageHostingSolution" target="_blank" rel="noopener noreferrer" aria-label="Open Sanskrit Assets Dashboard GitHub"><i class="bx bxl-github"></i></a>
                     </div>
                 </article>
             </div>
