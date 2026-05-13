@@ -11,7 +11,7 @@ https://llokai.github.io
 ## Highlights
 
 - Animated hero section with resume-aligned impact metrics
-- Project showcase featuring full-stack apps, automation tools, and capstone work
+- Project showcase featuring current full-stack apps, AI tooling, automation, and capstone work
 - Experience timeline for Cloud2 Software, Sheridan College, and HSRA
 - Skills section covering Java, Spring Boot, React, TypeScript, Python, SQL, CI/CD, testing, and cloud platforms
 - Responsive layout with scroll reveals, hover interactions, animated counters, and mobile navigation
@@ -19,12 +19,12 @@ https://llokai.github.io
 
 ## Featured Projects
 
+- **ShelfAware**: Spring Boot and React reading journal with JWT auth, Open Library import, PostgreSQL/Flyway persistence, and reading analytics.
 - **FindIT - Indoor Navigation Platform**: Capstone project built with Spring Boot, React, SQL, and REST APIs.
+- **RAG Codebase Assistant**: Local Python RAG chatbot for codebase and documentation Q&A using Ollama and Weaviate.
+- **Image Hosting Solution**: React and Express dashboard for GitHub-backed image/audio asset management.
 - **Job Tracker App**: React, Express, and PostgreSQL full-stack job application tracker.
-- **Google Forms Quiz Builder**: Google Apps Script automation for Forms quizzes and Classroom posting.
-- **SpeakingBuddy**: Pronunciation trainer using recording workflows and Praat acoustic analysis.
-- **BookReviews Application**: Spring Boot and Thymeleaf app with authentication, authorization, CRUD, and REST APIs.
-- **Sanskrit Assets Dashboard**: React/Vite dashboard for managing GitHub-backed flashcard assets and metadata.
+- **Google Forms Quiz Builder**: Google Apps Script automation for Forms quizzes, scoring, and shareable student links.
 
 ## Tech Stack
 
